@@ -1,0 +1,590 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #dcdcdc;
+    font-family: Arial, sans-serif;
+}
+
+.nav-left {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-left li a {
+    text-decoration: none;
+    color: #b59a83;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+}
+
+.nav-left li a:hover {
+    color: #6b4f3b;
+}
+
+.nav-center h1 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.15em;
+    color: #000;
+}
+
+.nav-right form {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right input[type="search"] {
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.nav-right button {
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+}
+
+.nav-right button:hover {
+    background-color: #f0e6db;
+}
+
+main {
+    padding-top: 70px; /* nav height */
+}
+
+.special-coffee-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9f8f6;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.special-coffee-section .image-wrapper img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.special-coffee-section .text-wrapper {
+    max-width: 600px;
+}
+
+.special-coffee-section h2 {
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #3a3a3a;
+}
+
+.special-coffee-section .highlight {
+    color: #c49a6c; /* warna coklat keemasan */
+    font-weight: 700;
+}
+
+.special-coffee-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #6c6c6c;
+    margin-bottom: 1.5rem;
+}
+
+.order-btn {
+    padding: 0.6rem 1.8rem;
+    border: 1px solid #c49a6c;
+    border-radius: 25px;
+    background: transparent;
+    font-weight: 700;
+    color: #3a3a3a;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #c49a6c;
+    color: white;
+}
+
+.shop-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: #6b4f3b;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-card {
+    max-width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.add-cart-btn {
+    background-color: #6b4f3b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-cart-btn:hover {
+    background-color: #5a3e2a;
+}
+
+.category-section {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.category-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.text-card {
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.shop-link {
+    text-decoration: none;
+    color: #6b4f3b;
+    font-weight: bold;
+    border-bottom: 1px solid #6b4f3b;
+    padding-bottom: 2px;
+}
+
+.shop-link:hover {
+    color: #5a3e2a;
+    border-color: #5a3e2a;
+}
+
+.menu-section {
+    padding: 60px 20px;
+    background-color: #f9f6f3;
+    font-family: "Georgia", serif;
+}
+
+.menu-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-column {
+    flex: 1;
+    max-width: 500px;
+}
+
+.menu-column h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.menu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.menu-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.menu-item h3 {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menu-item span {
+    font-weight: normal;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #444;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+.subscribe-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fdfbf8;
+    font-family: "Georgia", serif;
+}
+
+.subscribe-section h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.subscribe-section p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 0.9rem;
+    min-width: 250px;
+}
+
+.subscribe-form button {
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #888;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+.blog-section {
+    padding: 60px 20px;
+    background-color: #fffdfb;
+    font-family: "Georgia", serif;
+}
+
+.blog-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.blog-header h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.read-posts-link {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-card {
+    max-width: 300px;
+    flex: 1;
+    text-align: left;
+}
+
+.blog-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.blog-card h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.blog-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.instagram-section {
+    padding: 60px 20px;
+    background-color: #fdfbf8;
+    text-align: center;
+    font-family: "Georgia", serif;
+}
+
+.instagram-section h2 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.instagram-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.instagram-gallery img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.instagram-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.footer-section {
+    background-color: #fdfbf8;
+    padding: 40px 20px 20px;
+    font-family: "Georgia", serif;
+    font-size: 0.9rem;
+    color: #333;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-column p {
+    margin: 6px 0;
+    cursor: default;
+}
+
+.footer-column .muted {
+    color: #b1b1b1;
+}
+
+.footer-column.contact-info p {
+    font-weight: normal;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.footer-bottom a {
+    color: #555;
+    text-decoration: underline;
+}
+
+.testimonial-section {
+    background-color: #fdfbf8;
+    padding: 60px 20px;
+    font-family: "Georgia", serif;
+    text-align: center;
+    position: relative;
+}
+
+.testimonial-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-slide {
+    display: none;
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.author {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3b2e2e;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: -50px;
+}
+
+.next-btn {
+    right: -50px;
+}
