@@ -1,17 +1,15 @@
 ````markdown
-# ☕ Coffee Shop Laravel Website
+# Coffee Shop Laravel Website
 
 Website bertema coffee shop berbasis Laravel dan PostgreSQL. Website ini terdiri dari beberapa section seperti specialty coffee, kategori produk, blog, dan lainnya.
 
-## 🔧 Instalasi & Setup
-
-Ikuti langkah-langkah berikut untuk menjalankan project ini secara lokal.
+## Instalasi & Setup
 
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/nama-repo.git
-cd nama-repo
+git clone https://github.com/Sorrecer/nexa-web-challenge
+cd nex-web-challenge
 ```
 ````
 
@@ -40,8 +38,6 @@ DB_DATABASE=nama_database
 DB_USERNAME=postgres
 DB_PASSWORD=your_password
 ```
-
-> Pastikan database PostgreSQL sudah dibuat sesuai nama di atas.
 
 ### 4. Generate App Key
 
