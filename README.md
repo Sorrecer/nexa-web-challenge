@@ -1,7 +1,3 @@
-Berikut adalah isi file `README.md` untuk proyek Laravel Coffee Shop kamu:
-
----
-
 ````markdown
 # ☕ Coffee Shop Laravel Website
 
@@ -98,27 +94,3 @@ npm run dev
 -   `app/Http/Controllers/` – Logic controller (jika digunakan).
 
 ---
-
-## 📝 Catatan Tambahan
-
--   Folder `vendor/` dan file `.env` sudah masuk `.gitignore`.
--   Pastikan semua aset gambar sesuai dengan path di HTML (contoh: `public/images/coffee.jpg`).
-
----
-
-## 👨‍💻 Kontribusi
-
-Pull request dan masukan sangat diterima! Silakan fork dan ajukan perubahan.
-
----
-
-## 📜 Lisensi
-
-[MIT](LICENSE)
-
-```
-
----
-
-Kalau kamu mau aku bantu isi bagian kontribusi atau lisensi secara otomatis, tinggal bilang!
-```
